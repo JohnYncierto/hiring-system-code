@@ -1,0 +1,55 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method App\\Models\\ActivityLogEntry\:\:subject\(\) should return Illuminate\\Database\\Eloquent\\Relations\\MorphTo\<Illuminate\\Database\\Eloquent\\Model, static\(App\\Models\\ActivityLogEntry\)\> but returns Illuminate\\Database\\Eloquent\\Relations\\MorphTo\<Illuminate\\Database\\Eloquent\\Model, \$this\(App\\Models\\ActivityLogEntry\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Models/ActivityLogEntry.php
+
+		-
+			message: '#^Method App\\Models\\ActivityLogEntry\:\:user\(\) should return Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<App\\Models\\User, static\(App\\Models\\ActivityLogEntry\)\> but returns Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<App\\Models\\User, \$this\(App\\Models\\ActivityLogEntry\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Models/ActivityLogEntry.php
+
+		-
+			message: '#^Method App\\Models\\PipelineTemplate\:\:stages\(\) should return Illuminate\\Database\\Eloquent\\Relations\\HasMany\<App\\Models\\PipelineTemplateStage, static\(App\\Models\\PipelineTemplate\)\> but returns Illuminate\\Database\\Eloquent\\Relations\\HasMany\<App\\Models\\PipelineTemplateStage, \$this\(App\\Models\\PipelineTemplate\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Models/PipelineTemplate.php
+
+		-
+			message: '#^Method App\\Models\\PipelineTemplateStage\:\:pipelineTemplate\(\) should return Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<App\\Models\\PipelineTemplate, static\(App\\Models\\PipelineTemplateStage\)\> but returns Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<App\\Models\\PipelineTemplate, \$this\(App\\Models\\PipelineTemplateStage\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Models/PipelineTemplateStage.php
+
+		-
+			message: '#^Method App\\Models\\PipelineTemplateStage\:\:scorecardTemplate\(\) should return Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<App\\Models\\ScorecardTemplate, static\(App\\Models\\PipelineTemplateStage\)\> but returns Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<App\\Models\\ScorecardTemplate, \$this\(App\\Models\\PipelineTemplateStage\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Models/PipelineTemplateStage.php
+
+		-
+			message: '#^Method App\\Models\\RoleAssignment\:\:user\(\) should return Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<App\\Models\\User, static\(App\\Models\\RoleAssignment\)\> but returns Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<App\\Models\\User, \$this\(App\\Models\\RoleAssignment\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Models/RoleAssignment.php
+
+		-
+			message: '#^Method App\\Models\\ScorecardTemplate\:\:criteria\(\) should return Illuminate\\Database\\Eloquent\\Relations\\HasMany\<App\\Models\\ScorecardTemplateCriterion, static\(App\\Models\\ScorecardTemplate\)\> but returns Illuminate\\Database\\Eloquent\\Relations\\HasMany\<App\\Models\\ScorecardTemplateCriterion, \$this\(App\\Models\\ScorecardTemplate\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Models/ScorecardTemplate.php
+
+		-
+			message: '#^Method App\\Models\\ScorecardTemplateCriterion\:\:scorecardTemplate\(\) should return Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<App\\Models\\ScorecardTemplate, static\(App\\Models\\ScorecardTemplateCriterion\)\> but returns Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\<App\\Models\\ScorecardTemplate, \$this\(App\\Models\\ScorecardTemplateCriterion\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Models/ScorecardTemplateCriterion.php
+
+		-
+			message: '#^Method App\\Models\\User\:\:roles\(\) should return Illuminate\\Database\\Eloquent\\Relations\\HasMany\<App\\Models\\RoleAssignment, static\(App\\Models\\User\)\> but returns Illuminate\\Database\\Eloquent\\Relations\\HasMany\<App\\Models\\RoleAssignment, \$this\(App\\Models\\User\)\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Models/User.php
